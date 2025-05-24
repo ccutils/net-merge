@@ -32,7 +32,7 @@
 
 命令示例：
 ```bash
-./cidr-tool merge \
+./net-merge merge \
   --url https://example.com/cidrs.txt \
   --file ./local-cidrs.txt \
   --network 172.16.0.0/12,10.0.0.0/8 \
@@ -57,7 +57,7 @@
 
 ```bash
 
-./cidr-tool test --in all-cidrs.nft --type nft --name whitelist 192.168.1.100
+./net-merge test --in all-cidrs.nft --type nft --name whitelist 192.168.1.100
 ```
 
 
@@ -65,7 +65,7 @@
 无需任何第三方依赖，使用 Go 编译：
 
 ```bash
-go build -o cidr-tool main.go
+go build -o net-merge main.go
 ```
 
 ## 🧠 功能特性
